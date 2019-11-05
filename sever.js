@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(methodOverride('_method'));
 
 app.get('/' , (req, res) => {
-  res.send('Hello World!');
+  res.send('Hello Richard!');
 });
 
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
