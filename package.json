@@ -1,0 +1,29 @@
+{
+  "name": "sturdy-octo-computing-machine",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.16.3"
+  },
+  "description": "",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbrown29/sturdy-octo-computing-machine.git"
+  },
+  "author": "Richard B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbrown29/sturdy-octo-computing-machine/issues"
+  },
+  "homepage": "https://github.com/rbrown29/sturdy-octo-computing-machine#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.7.8"
+  }
+}
