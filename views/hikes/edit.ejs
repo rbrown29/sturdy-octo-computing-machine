@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Oregon Hikes</title>
+        <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    </head>
+    <body>
+        <h1>Edit Hike</h1>
+        <div class="div1">
+        <form action="/Store/<%=Store.id%>?_method=PUT" method="POST">
+        Title:<input type="text" name="title"value="<%=Hike.name%>"/><br/>
+            Desc :<input type="textarea" name="description"value="<%=Hike.description%>"/><br/>
+            IMG :<input type="text" name="img" value="<%=Hike.img%>"/><br/>
+            <input class="input1" type="submit" value="Submit Changes"/>
+        </form>
+        </div>
+    </body>
+</html>
