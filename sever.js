@@ -48,7 +48,6 @@ app.use("/hike", hikeController);
 
 /////////////////////////////////////////////////////
 app.get('/hike' , (request, responce) => { //change to users/home.ejs later
-	Hike.find({}, (error, allHikes) => {
     
 		    // username: request.session.username
      responce.render("hello word!");
