@@ -12,11 +12,11 @@
         </nav>
         <div class="form-control-group">
         <form action="/hike/<%=Hike.id%>?_method=PUT" method="POST">
-        Title:<input type="text" name="title"value="<%=Hike.name%>"/><br/>
-            IMG :<input type="text" name="img" value="<%=Hike.img%>"/><br/>
-            MAP IMAGE  :<input type="text" name="image">
-            Des :<input type="textarea" name="description"value="<%=Hike.description%>"/><br/>
-            <input class="input1" type="submit" value="Submit Changes"/>
+        Title:<input type="text" name="title"value="<%=Hike.name%>"/>
+            IMG :<input type="text" name="img" value="<%=Hike.img%>"/>
+            MAP IMAGE  :<input type="text" name="image"><br>
+            <input class="textarea" type="textarea" name="description"value="<%=Hike.description%>"/><br><br>
+            <input type="submit" value="Submit Changes"/>
         </form>
         </div>
     </body>
