@@ -63,6 +63,20 @@ app.get('/', (request, responce) => {   // have user log in or sign up
 //    responce.send(request.session.username); 
 // });
 
+///////////////////////////
+// log out user session
+//////////////////////////
+app.get('/logout', (request, responce) => { 
+	request.session.destroy((error) => {
+		if(error){
+			console.log(error);
+			responce.redirect("/");
+		} else {
+			responce.redirect("/");
+		}
+	});
+});
+
 ////////////////////////////////////////////
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
 

@@ -4,7 +4,6 @@ const router = express.Router();
 
 const Hike = require("../models/hike.js");
 
-
 ///////////////////////////
 // index route
 //////////////////////////

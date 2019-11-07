@@ -29,6 +29,34 @@ nav {
 	background-color: green;
 }
 
+.p4 {
+	color: white;
+	text-align: center;
+}
+
+.p1div {
+	border: 1px solid orange;
+	width: 150px;
+	height: 25px;
+	border-radius: 3px;
+	background-color: orange;
+}
+
+.p2div {
+	border: 1px solid red;
+	width: 120px;
+	height: 25px;
+	border-radius: 3px;
+	background-color: red;
+}
+.p4div {
+	border: 1px solid blue;
+	width: 120px;
+	height: 25px;
+	border-radius: 3px;
+	background-color: blue;
+}
+
 .form1 {
 	border: solid green;
 }
@@ -50,7 +78,7 @@ nav {
 
 .div1 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 .div2 {
 	display: flex;
