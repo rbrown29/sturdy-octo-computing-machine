@@ -21,6 +21,11 @@ h6 {
 	left: 15px;
 }
 
+.h6div {
+	font-family: 'Aclonica';font-size: 22px;
+	color: green;
+}
+
 a {
 	font-family: 'Aclonica';font-size: 18px;
 }

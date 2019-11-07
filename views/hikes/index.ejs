@@ -20,8 +20,26 @@
         </div>
         <div class="row">
             <h6>Coastal Hikes</h6>
+            <hr>
             <div class="row row-md-4">
-                <%for (let i = 0; i < Hike.length; i++) {%>
+                <%for (let i = 0; i <= 2; i++) {%>
+                    <div class="card">
+                        <h3 class="card-title"><%=Hike[i].title%></h3>
+                        <img src="<%=Hike[i].img%>">
+                        <ul class="card-actions">
+                            <li>
+                                <a href="/hike/<%=Hike[i].id%>"><%=Hike[i].title%></a>
+                            </li>
+                        </ul>
+                    </div>
+                <%}%>
+            </div>
+        </div>
+        <div class="row">
+            <h6>Crater Lake Hikes</h6>
+            <hr>
+            <div class="row row-md-4">
+                <%for (let i = 3; i <= 5; i++) {%>
                     <div class="card">
                         <h3 class="card-title"><%=Hike[i].title%></h3>
                         <img src="<%=Hike[i].img%>">
