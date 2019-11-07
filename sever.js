@@ -47,10 +47,10 @@ app.use("/hike", hikeController);
 /////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////
-app.get('/hike' , (request, responce) => { //change to users/home.ejs later
+app.get('/' , (request, responce) => { //change to users/home.ejs later
     
 		    // username: request.session.username
-     responce.render("hello word!");
+     responce.render("hikes/index.ejs");
 });
 
 
