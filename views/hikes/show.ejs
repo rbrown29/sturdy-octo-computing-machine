@@ -4,14 +4,32 @@
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-        <h1><%=Hike.title %></h1>
-        <img src="<%=Hike.img%>"><br>
-        Title: <%=Hike.title %> <br>  
-        Descr: <%=Hike.description%> <br>
         <nav>
-            <a href="/hike">Back to hikes</a>
+            <h2><%=Hike.title%></h2>
         </nav>
+        <div class="row">
+            <div class="col col-md-5">
+                    <div class="card">
+                        <h3 class="card-title"><%=Hike.title%></h3>
+                        <img src="<%=Hike.img%>">
+                        <ul class="card-actions">
+                            <li>
+                                <%=Hike.description%>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="div2">
+                 <div class="col col-md-14">
+                    <div class="card">
+                        <img class="img1" src="<%=Hike.image%>">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="/hike">Back to hikes</a>
     </body>
 </html>

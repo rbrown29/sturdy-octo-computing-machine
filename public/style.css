@@ -1,0 +1,40 @@
+img {
+	height: 200px;
+	width: 200px;
+}
+.img1{
+	height: 400px;
+	width: 400px;
+}
+body {
+	background-color: #f2f2f2;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+}
+
+nav {
+	background-color: green;
+}
+
+.button-primary-outlined {
+	width: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+.div1 {
+	display: flex;
+	justify-content: center;
+}
+.div2 {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.form-control-group {
+	display: flex;
+	justify-content: center;
+}

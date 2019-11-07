@@ -4,16 +4,21 @@
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-      <h1>New Hike</h1>
-      <div class="">
-        <form action="/store" method="POST">
-            Title:<input type="text" name="title" /><br/>
-            Descr:<input type="textarea" name="description" /><br/>
-            IMG  :<input type="text" name="img" /><br/>
-            <input class="input1" type="submit" value="Create Hike"/>
+        <nav>
+            <h2>New Hike</h2>
+        </nav>
+      <div class="form-control-group">
+        <form action="/hike" method="POST">
+            Title:<input type="text" name="title">
+            IMG  :<input type="text" name="img">
+            MAP IMAGE  :<input type="text" name="image">
+            Descrition:<input type="textarea" name="description"><br><br>
+            <input type="submit" value="Create Hike"/>
         </form>
-       </div>
+        </div>
+      </div>
     </body>
 </html>

@@ -3,21 +3,34 @@
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <nav class="link">
-            <a href="/hike/new">Add a new product</a>
+        <nav>
+            <h2>Oregon Hikes</h2>
         </nav>
-        <h1>Oregon Hikes</h1>
-        <div class="">
+        <div class="div1">
+            <button class="button-primary-outlined">
+                <a href="/hike/new">Add New Hike</a>
+            </button>
+        </div>
+        <div class="row">
+            <div class="row row-md-4">
                 <%for (let i = 0; i < Hike.length; i++) {%>
-                    <div class="">
-                    <b><br><%=Store[i].name%><br><br></b>
-                    <a href="/hike/<%=Hike[i].id%>">
-                    <img src="<%=Hike[i].img%>"><br><br>
-                    </a>
+                    <div class="card">
+                        <h3 class="card-title"><%=Hike[i].title%></h3>
+                        <img src="<%=Hike[i].img%>">
+                        <ul class="card-actions">
+                            <li>
+                                <a href="/hike/<%=Hike[i].id%>"><%=Hike[i].title%>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 <%}%>
+            </div>
         </div>
+        
     </body>
 </html>
+

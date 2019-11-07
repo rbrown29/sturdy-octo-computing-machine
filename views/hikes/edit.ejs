@@ -7,8 +7,8 @@
     </head>
     <body>
         <h1>Edit Hike</h1>
-        <div class="div1">
-        <form action="/Store/<%=Store.id%>?_method=PUT" method="POST">
+        <div class="">
+        <form action="/hike/<%=Hike.id%>?_method=PUT" method="POST">
         Title:<input type="text" name="title"value="<%=Hike.name%>"/><br/>
             Desc :<input type="textarea" name="description"value="<%=Hike.description%>"/><br/>
             IMG :<input type="text" name="img" value="<%=Hike.img%>"/><br/>

@@ -47,7 +47,7 @@ app.use("/hike", hikeController);
 /////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////
-app.get('/' , (request, responce) => { //change to users/home.ejs later
+app.get('/hike' , (request, responce) => { //change to users/home.ejs later
   responce.send('Hello Richard!');
 });
 

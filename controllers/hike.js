@@ -4,51 +4,23 @@ const router = express.Router();
 
 const Hike = require("../models/hike.js");
 
-// new log entries
-// router.get('/seed/newlogs', async (request, responce) => {
-//   const newLogs = [
-//       {
-//         title: "Stardate 3",
-//         entry: "Today the crew Broke a button",
-//         shipIsBroken: false
-//       }, 
-//       {
-//         title: "Stardate 33",
-//         entry: "Data went to the borg",
-//         shipIsBroken: false
-//       }, 
-//       {
-//         title: "Stardate 333",
-//         entry: "Holodeck malfunction",
-//         shipIsBroken: false
-//       }
-//     ];
-
-//   try {
-//     const seedLogs = await Log.create(newLogs);
-//     responce.send(seedLogs);
-//     responce.redirect("/log");
-//   } catch (error) {
-//     responce.send(error.message);
-//   }
-// });
 
 ///////////////////////////
 // index route
 //////////////////////////
 router.get("/", (request, responce) => {
-	if(request.session.username) {
+	//if(request.session.username) {
     Hike.find({}, (error, allHikes) => {
     	responce.render("hikes/index.ejs", {
-		    hike: allHikes,
-		    username: request.session.username
+		    Hike: allHikes,
+		    // username: request.session.username
 
 	    });
     });
-    } else {
-  	responce.redirect("/");
-    }
-    console.log(error);
+   //  } else {
+  	// responce.redirect("/");
+   //  }
+   //  console.log(error);
 });
 
 ////////////////////////////////////
@@ -68,7 +40,7 @@ router.delete("/:id", (request, responce) => {
 router.get('/:id/edit', (request, responce) => {
     Hike.findById(request.params.id, (error, foundHike) => {
         responce.render('hikes/edit.ejs', {
-    	   hike: foundHike
+    	   Hike: foundHike
     		
     	});
     });
@@ -97,7 +69,7 @@ router.get("/new", (request, responce) => {
 router.get("/:id", (request, responce) => {
 	Hike.findById(request.params.id, (error, foundHike) => {
 		responce.render("hikes/show.ejs", {
-			hike: foundHike
+			Hike: foundHike
 
 		});
 
