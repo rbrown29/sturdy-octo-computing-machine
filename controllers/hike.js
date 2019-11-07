@@ -9,7 +9,7 @@ const Hike = require("../models/hike.js");
 // index route
 //////////////////////////
 router.get("/", (request, responce) => {
-	//if(request.session.username) {
+	// if(request.session.username) {
     Hike.find({}, (error, allHikes) => {
     	responce.render("hikes/index.ejs", {
 		    Hike: allHikes,
@@ -20,7 +20,8 @@ router.get("/", (request, responce) => {
    //  } else {
   	// responce.redirect("/");
    //  }
-   //  console.log(error);
+    // console.log(error);
+    // console.log(allHikes);
 });
 
 ////////////////////////////////////

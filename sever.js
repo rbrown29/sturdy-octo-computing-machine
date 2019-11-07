@@ -38,22 +38,30 @@ app.use(session({  // add session
 const hikeController = require('./controllers/hike.js');
 app.use("/hike", hikeController);
 
-// const usersController = require('./controllers/users.js');
-// app.use("/users", usersController);
+const usersController = require('./controllers/users.js');
+app.use("/users", usersController);
 
-// const sessionsController = require('./controllers/sessions.js');
-// app.use("/sessions", sessionsController);
-
-/////////////////////////////////////////////////////
+const sessionsController = require('./controllers/sessions.js');
+app.use("/sessions", sessionsController);
 
 /////////////////////////////////////////////////////
-app.get('/' , (request, responce) => { //change to users/home.ejs later
-    
-		    // username: request.session.username
-     responce.render("hikes/index.ejs");
+// have user log in and redirect
+/////////////////////////////////////////////////////
+app.get('/', (request, responce) => {   // have user log in or sign up
+     responce.render("users/home.ejs");
+     // responce.render("hello");
 });
 
+// //// set a session /////
+// app.get("/set", (request, responce) => {
+// 	request.session.username = "Koder"; //new
+// 	responce.send("In the strict scientific sense we all feed on death…..even vegetarians.");
+// });
 
+// //// Check who is logged in ////////
+// app.get("/get", (request, responce) => { //new
+//    responce.send(request.session.username); 
+// });
 
 ////////////////////////////////////////////
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
