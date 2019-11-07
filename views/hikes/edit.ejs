@@ -4,14 +4,18 @@
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <h1>Edit Hike</h1>
-        <div class="">
+        <nav>
+            <h2>Edit Hike</h2>
+        </nav>
+        <div class="form-control-group">
         <form action="/hike/<%=Hike.id%>?_method=PUT" method="POST">
         Title:<input type="text" name="title"value="<%=Hike.name%>"/><br/>
-            Desc :<input type="textarea" name="description"value="<%=Hike.description%>"/><br/>
             IMG :<input type="text" name="img" value="<%=Hike.img%>"/><br/>
+            MAP IMAGE  :<input type="text" name="image">
+            Des :<input type="textarea" name="description"value="<%=Hike.description%>"/><br/>
             <input class="input1" type="submit" value="Submit Changes"/>
         </form>
         </div>

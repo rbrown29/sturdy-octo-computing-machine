@@ -14,9 +14,24 @@ h2 {
 	text-align: center;
 	color: white;
 }
+h6 {
+	text-align: center;
+	color: green;
+}
+/*.span1{
+	font-size:200%;
+}*/
 
 nav {
 	background-color: green;
+}
+
+.form1 {
+	border: solid green;
+}
+
+.form2 {
+	color: green;
 }
 
 .button-primary-outlined {

@@ -29,6 +29,8 @@ router.get("/", (request, responce) => {
 router.delete("/:id", (request, responce) => {
 	//update database and delete//////////////////////////////
 	Hike.findByIdAndRemove(request.params.id, (error, data) => {
+        console.log(error);
+        console.log(data);
         responce.redirect("/hike");
 	});
   

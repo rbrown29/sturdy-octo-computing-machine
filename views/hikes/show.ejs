@@ -10,6 +10,7 @@
         <nav>
             <h2><%=Hike.title%></h2>
         </nav>
+        <a href="/hike">Back to hikes</a>
         <div class="row">
             <div class="col col-md-5">
                     <div class="card">
@@ -17,7 +18,11 @@
                         <img src="<%=Hike.img%>">
                         <ul class="card-actions">
                             <li>
-                                <%=Hike.description%>
+                                <%=Hike.description%><br><br>
+                                <a href="/hike/<%=Hike.id%>/edit">Edit This Hike</a>
+                                <form  class="form2" action="/hike/<%=Hike.id %>?_method=DELETE" method="POST">
+                                    <input class="form1" type="submit" value="DELETE"/>
+                                </form>
                             </li>
                         </ul>
                     </div>
@@ -30,6 +35,5 @@
                 </div>
             </div>
         </div>
-        <a href="/hike">Back to hikes</a>
     </body>
 </html>

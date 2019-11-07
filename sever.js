@@ -47,9 +47,9 @@ app.use("/hike", hikeController);
 /////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////
-app.get('/hike' , (request, responce) => { //change to users/home.ejs later
-  responce.redirect("/hike");
-});
+// app.get('/hike' , (request, responce) => { //change to users/home.ejs later
+//   responce.redirect("/hike");
+// });
 
 
 
