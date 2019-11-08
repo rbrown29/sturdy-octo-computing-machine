@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="../app.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
         <link rel="stylesheet" href="../style.css">
         <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
@@ -11,11 +16,22 @@
         <nav>
             <h2><%=Hike.title%></h2>
         </nav>
-        <a href="/hike">Back to hikes</a>
+        <div class="lbttn">
+            <a href="/hike">Back to hikes</a>
+            <button id="open">Description</button>
+            <div id="dialog">
+               <button class="close">Close</button>
+                   <p>
+                      <center><img src="<%=Hike.img%>" class="img3"></center><br>
+                      <%=Hike.description%>                 
+                   </p>
+            </div>
+        </div>
         <div class="row">
             <div class="col col-md-5">
                     <div class="card">
                         <h3 class="card-title"><%=Hike.title%></h3>
+                        <a href="<%=Hike.img%>"></a>
                         <img src="<%=Hike.img%>">
                         <ul class="card-actions">
                             <li>
