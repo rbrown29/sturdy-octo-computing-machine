@@ -15,15 +15,28 @@ img {
 	width: 300px;
 }
 
+.img4 {
+	height: 500px;
+	width: 500px;
+}
+
 /*body background color*/
 body {
 	background-color: #f2f2f2;
 }
 
-h2 {
+/*align and color headers*/
+h2, h1 {
 	text-align: center;
 	color: white;
 }
+
+.h1 {
+
+	text-align: center;
+    color: green;
+}
+
 h6 {
 	font-family: 'Aclonica';font-size: 22px;
 	color: green;
@@ -100,6 +113,19 @@ nav {
 	justify-content: flex-end;
 }
 
+.div5 {
+	width: 730px;
+	font-size: 100px;
+	line-height: 3;
+	font-family:'lucida grande',
+	tahoma,
+	verdana,
+	arial,
+	sans-serif;
+	margin: -13px 0 30px 0;
+	color: green;
+}
+
 .form-control-group {
 	display: flex;
 	justify-content: center;
@@ -143,6 +169,16 @@ nav {
 .lbttn {
 	display: flex;
 	justify-content: space-around;
+}
+
+/*no border on tooltip for logout*/
+.tooltip {
+	border-style: none;
+}
+
+/*tool tip text font*/
+.tooltip-text {
+	font-family: 'Aclonica';font-size: 12px;
 }
 
 

@@ -52,16 +52,6 @@ app.get('/', (request, responce) => {   // have user log in or sign up
      // responce.render("hello");
 });
 
-// //// set a session /////
-// app.get("/set", (request, responce) => {
-// 	request.session.username = "Koder"; //new
-// 	responce.send("In the strict scientific sense we all feed on death…..even vegetarians.");
-// });
-
-// //// Check who is logged in ////////
-// app.get("/get", (request, responce) => { //new
-//    responce.send(request.session.username); 
-// });
 
 ///////////////////////////
 // log out user session

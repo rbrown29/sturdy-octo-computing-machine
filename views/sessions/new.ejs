@@ -3,14 +3,27 @@
     <head>
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="../app.js"></script>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
     </head>
     <body>
-       <h1>Sign-In</h1>
-       <form action="/sessions" method="POST">
-       Username<input type="text" name="username"><br>
-       Password<input type="password" name="password"><br>
-       <input type="submit" name="Register">
-       </form>
-
+       <h1 class="h1">Sign-In</h1>
+      <div class="lbttn">
+            <button id="open">Sign In Here</button>
+            <div id="dialog">
+               <button class="close">Close</button>
+                   <p>
+                      <form action="/sessions" method="POST">
+                       Username:<input type="text" name="username"><br>
+                       Password:<input type="password" name="password"><br>
+                      <input type="submit" name="Register">
+                      </form> 
+                   </p>
+            </div>
     </body>
 </html>

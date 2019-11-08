@@ -4,21 +4,21 @@ const router = express.Router();
 
 const Hike = require("../models/hike.js");
 
-///////////////////////////
-// index route
-//////////////////////////
+/////////////////////////////////////
+// index route and session username
+//////////////////////////////
 router.get("/", (request, responce) => {
-	// if(request.session.username) {
+	if(request.session.username) {
     Hike.find({}, (error, allHikes) => {
     	responce.render("hikes/index.ejs", {
 		    Hike: allHikes,
-		    // username: request.session.username
+		    username: request.session.username
 
 	    });
     });
-   //  } else {
-  	// responce.redirect("/");
-   //  }
+    } else {
+  	responce.redirect("/");
+    }
     // console.log(error);
     // console.log(allHikes);
 });
