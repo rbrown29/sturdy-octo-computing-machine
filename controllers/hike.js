@@ -91,14 +91,14 @@ router.post("/", (request, responce) => {
 
 });
 
-////////////////////////////////////////////////////////
-// clear data                        //////////////////
-///////////////////////////////////////////////////////
-router.put("/clear", (request, responce) => {
-    Hike.remove({}, (error, updatedHike) => {
-        responce.redirect("/hike");
-    });
-});
+// ////////////////////////////////////////////////////////
+// // clear data                        //////////////////
+// ///////////////////////////////////////////////////////
+// router.put("/clear", (request, responce) => {
+//     Hike.remove({}, (error, updatedHike) => {
+//         responce.redirect("/hike");
+//     });
+// });
 
 
 

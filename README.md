@@ -1,6 +1,6 @@
 # Oregon Hikes
 
-##### This app lists hikes in Oregon.
+### This app lists hikes in Oregon.
 Users can--- 
 * View, edit, add new hikes
 * Sign up
