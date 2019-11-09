@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
+
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"
                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
                 crossorigin="anonymous">
@@ -11,6 +12,7 @@
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
         <link rel="stylesheet" href="../style.css">
         <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+
     </head>
     <body>
         <nav>
@@ -18,9 +20,9 @@
         </nav>
         <div class="lbttn">
             <a href="/hike">Back to hikes</a>
-            <button id="open">Description</button>
+            <a href="#" id="open">Description</a>
             <div id="dialog">
-               <button class="close">Close</button>
+               <a href="#" class="close">Close</a>
                    <p>
                       <center><img src="<%=Hike.img%>" class="img3"></center><br>
                       <%=Hike.description%>                 

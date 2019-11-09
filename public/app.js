@@ -7,6 +7,7 @@ $(() => {
        $("#open").on("click", (event) => {
          $("#dialog").css("visibility", "visible");
          $(".row").css("visibility", "hidden");
+         $(".lbttn").css("visibility", "hidden");
        });
      /////////////////////////////////////////////////////
      // on click close dialog
@@ -14,5 +15,6 @@ $(() => {
        $(".close").on("click", (event) => {
          $("#dialog").css("visibility", "hidden");
          $(".row").css("visibility", "visible");
+         $(".lbttn").css("visibility", "visible");
        });
 });

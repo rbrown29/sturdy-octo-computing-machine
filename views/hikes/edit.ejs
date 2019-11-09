@@ -3,19 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
-        <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
         <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
     </head>
     <body>
-        <nav>
-            <h2>Edit Hike</h2>
-        </nav>
-        <div class="form-control-group">
+         <center><div class="div6">H̲̲̿ɪ̲̲̿ᴋ̲̲̿ɪ̲̲̿ɴ̲̲̿ɢ̲̲̿</div></center>
+        <div class="lbttn">
         <form action="/hike/<%=Hike.id%>?_method=PUT" method="POST">
-        Title:<input type="text" name="title"value="<%=Hike.name%>"/>
-            IMG :<input type="text" name="img" value="<%=Hike.img%>"/>
-            MAP IMAGE  :<input type="text" name="image"><br>
-            <input class="textarea" type="textarea" name="description"value="<%=Hike.description%>"/><br><br>
+            <input type="text" name="title" value="<%=Hike.name%>" placeholder="TITLE"><br>
+            <input type="text" name="img" value="<%=Hike.img%>" placeholder="IMAGE"><br>
+            <textarea class="textarea" type="textarea" name="description"value="<%=Hike.description%>" placeholder="DESCRIPTION"></textarea><br>
             <input type="submit" value="Submit Changes"/>
         </form>
         </div>

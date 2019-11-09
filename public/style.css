@@ -95,7 +95,13 @@ nav {
 
 .textarea {
 	width: 300px;
-    height: 150px;
+    height: 100px;
+    color: green;
+}
+
+input {
+	color: green;
+	border-color: green;
 }
 
 .button-primary-outlined {
@@ -113,6 +119,7 @@ nav {
 	justify-content: flex-end;
 }
 
+/*hiking logo homepage style*/
 .div5 {
 	width: 730px;
 	font-size: 100px;
@@ -126,16 +133,30 @@ nav {
 	color: green;
 }
 
+.div6{
+	width: 730px;
+	font-size: 60px;
+	line-height: 3;
+	font-family:'lucida grande',
+	tahoma,
+	verdana,
+	arial,
+	sans-serif;
+	color: green;
+}
+
 .form-control-group {
 	display: flex;
 	justify-content: center;
 }
 
-/*module dialog box*/
+
+/*modal dialog box*/
 #dialog {
 	font-family: 'Aclonica';font-size: 15px;
 	position: absolute;
-	top: 5px;
+	top:5px;
+	left: 5px;
 	background-color: green;
 	visibility: hidden;
 	border-radius: 8px;
@@ -144,18 +165,12 @@ nav {
     border-color: green;
     margin: 200px;
     padding: 20px;
+    z-index: 1;
 }
 
-/*module desription button*/
+/*modal desription button*/
 #open {
-    font-family: 'Aclonica';font-size: 12px;
-	border-radius: 8px;
-    background-color: white;
-    color: green;
-    border-color: green;
-    width: 140px;
-    display: flex;
-    justify-content: center;
+    font-family: 'Aclonica'; font-size: 18px;
 }
 
 /*module button style*/
@@ -169,7 +184,9 @@ nav {
 .lbttn {
 	display: flex;
 	justify-content: space-around;
+	color: green;
 }
+
 
 /*no border on tooltip for logout*/
 .tooltip {

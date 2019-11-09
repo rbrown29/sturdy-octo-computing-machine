@@ -14,16 +14,12 @@
     <body>
        <h1 class="h1">Sign-In</h1>
       <div class="lbttn">
-            <button id="open">Sign In Here</button>
-            <div id="dialog">
-               <button class="close">Close</button>
-                   <p>
-                      <form action="/sessions" method="POST">
-                       Username:<input type="text" name="username"><br>
-                       Password:<input type="password" name="password"><br>
-                      <input type="submit" name="Register">
-                      </form> 
-                   </p>
-            </div>
+        <form action="/sessions" method="POST">
+          Username:<input type="text" name="username"><br>
+          Password:<input type="password" name="password"><br>
+          <input type="submit" name="Register">
+          </form> 
+            
+      </div>
     </body>
 </html>
