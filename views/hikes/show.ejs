@@ -37,11 +37,11 @@
                         <img src="<%=Hike.img%>">
                         <ul class="card-actions">
                             <li>
-                                <%if (Hike.difficulty === "Easy") {%>
+                                <%if (Hike.difficulty === "Easy" || Hike.difficulty === "easy") {%>
                                     <div class="p4div">
                                         <p class="p4">Difficulty: <%=Hike.difficulty%></p>
                                      </div><br>
-                                <%} else if (Hike.difficulty === "Moderate") {%>
+                                <%} else if (Hike.difficulty === "Moderate" || Hike.difficulty === "moderate") {%>
                                     <div class="p1div">
                                         <p class="p4">Difficulty: <%=Hike.difficulty%></p>
                                      </div><br>
