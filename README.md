@@ -1,7 +1,13 @@
 # Oregon Hikes
 
+### Links To Gitub project and live on Heroku.
+ 
+https://github.com/rbrown29/sturdy-octo-computing-machine
+
+https://evening-plateau-51206.herokuapp.com/
+
 ### This app lists hikes in Oregon.
-Users can--- 
+#### Users can--- 
 * View, edit, add new hikes
 * Sign up
 * Login
@@ -10,9 +16,10 @@ Users can---
 * Know the difficulty of the trail
 * Delete a trail (Shorty will be removed. Will only be for admin use)
 
+### Editing or Adding Map URL
 
-### Links To Gitub project and live on Heroku.
- 
-https://github.com/rbrown29/sturdy-octo-computing-machine
+* Must be a url to google maps
+* Only the url, not the iframe
 
-https://evening-plateau-51206.herokuapp.com/
+![Google Map example](/Users/richardbrown/Desktop/G00GLEMAP.png)
+
