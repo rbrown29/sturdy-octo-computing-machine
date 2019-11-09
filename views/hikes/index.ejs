@@ -22,10 +22,9 @@
             </button>
         </div>
         <div class="row">
-            <h6>Coastal Hikes</h6>
             <hr>
             <div class="row row-md-4">
-                <%for (let i = 0; i <= 2; i++) {%>
+                <%for (let i = 0; i < Hike.length; i++) {%>
                     <div class="card">
                         <h3 class="card-title"><%=Hike[i].title%></h3>
                         <img src="<%=Hike[i].img%>">
@@ -38,7 +37,7 @@
                 <%}%>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <h6>Crater Lake Hikes</h6>
             <hr>
             <div class="row row-md-4">
@@ -54,7 +53,7 @@
                     </div>
                 <%}%>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
 
