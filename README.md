@@ -21,5 +21,5 @@ https://evening-plateau-51206.herokuapp.com/
 * Must be a url to google maps
 * Only the url, not the iframe
 
-![Google Map example](images/G00GLEMAP.png?raw=true{:height="100px"width="150px"})
+![Google Map example](images/G00GLEMAP.png?raw=true{:height="100px"width="60px"})
 
