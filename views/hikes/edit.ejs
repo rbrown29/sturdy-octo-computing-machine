@@ -12,7 +12,9 @@
         <form action="/hike/<%=Hike.id%>?_method=PUT" method="POST">
             <input type="text" name="title" value="<%=Hike.name%>" placeholder="TITLE"><br>
             <input type="text" name="img" value="<%=Hike.img%>" placeholder="IMAGE"><br>
-            <textarea class="textarea" type="textarea" name="description"value="<%=Hike.description%>" placeholder="DESCRIPTION"></textarea><br>
+            <input type="text" name="map" value="<%=Hike.map%>"placeholder="MAP URL"><br>
+            <input type="text" name="difficulty" value="<%=Hike.difficulty%>"placeholder="DIFFICULTY Easy/Moderate/Hard"><br>
+            <textarea class="textarea" type="textarea" name="description" value="<%=Hike.description%>" placeholder="DESCRIPTION"></textarea><br>
             <input type="submit" value="Submit Changes"/>
         </form>
         </div>

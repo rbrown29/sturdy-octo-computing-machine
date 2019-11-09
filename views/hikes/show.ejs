@@ -37,29 +37,17 @@
                         <img src="<%=Hike.img%>">
                         <ul class="card-actions">
                             <li>
-                                <% if(Hike.title === "Phantom Ship"){%>
-                                     <div class="p1div">
-                                        <p class="p4">Difficulty: Moderate</p>
+                                <%if (Hike.difficulty === "Easy") {%>
+                                    <div class="p4div">
+                                        <p class="p4">Difficulty: <%=Hike.difficulty%></p>
                                      </div><br>
-                                <%} else if (Hike.title === "Cascade head") {%>
+                                <%} else if (Hike.difficulty === "Moderate") {%>
+                                    <div class="p1div">
+                                        <p class="p4">Difficulty: <%=Hike.difficulty%></p>
+                                     </div><br>
+                                <%} else { %>
                                      <div class="p2div">
-                                        <p class="p4">Difficulty: Hard</p>
-                                     </div><br>
-                                <%} else if (Hike.title === "Neahkahnie Mountain") {%>
-                                     <div class="p4div">
-                                        <p class="p4">Difficulty: Easy</p>
-                                     </div><br>
-                                <%} else if (Hike.title === "Cape Perpetua") {%>
-                                     <div class="p4div">
-                                        <p class="p4">Difficulty: Easy</p>
-                                     </div><br>
-                                <%} else if (Hike.title === "Cleetwood Cove Trail") {%>
-                                     <div class="p4div">
-                                        <p class="p4">Difficulty: Easy</p>
-                                     </div><br>
-                                <%} else if (Hike.title === "Discovery Point Trail") {%>
-                                     <div class="p1div">
-                                        <p class="p4">Difficulty: Moderate</p>
+                                        <p class="p4">Difficulty: <%=Hike.difficulty%></p>
                                      </div><br>
                                 <%}%>
                                 <%=Hike.description%><br><br>
@@ -74,22 +62,7 @@
             <div class="div2">
                  <div class="col col-md-14">
                     <div class="card">
-                        <% if(Hike.title === "Phantom Ship"){%>
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.058599310157!2d-122.07289286851663!3d42.91474499347458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c63c5083905ce1%3A0xeba92000880652ee!2sPhantom%20Ship%20Overlook!5e0!3m2!1sen!2sus!4v1573163759836!5m2!1sen!2sus" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                     
-                        <%} else if (Hike.title === "Cascade head") {%>
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22553.261040779293!2d-124.00982509203412!3d45.04202301904308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eaecb6f768b443%3A0x6b300a2232ba8adb!2sCascade%20Head%20Trail%20-%20South%20Trailhead!5e0!3m2!1sen!2sus!4v1573162933160!5m2!1sen!2sus" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                     
-                        <%} else if (Hike.title === "Neahkahnie Mountain") {%>
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1001.6373868746736!2d-123.94632842773191!3d45.7433719159401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5494b65ed24a10ab%3A0x9a6391fa47f3dda!2sNeahkahnie%20Mountain%20Trail%20Viewpoint!5e0!3m2!1sen!2sus!4v1573163852388!5m2!1sen!2sus" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                     
-                        <%} else if (Hike.title === "Cape Perpetua") {%>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.1200899561954!2d-124.11590124964864!3d44.28691907900212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c19343ee8c4fa9%3A0x502df8433c121755!2sCape%20Perpetua%20Trailhead!5e0!3m2!1sen!2sus!4v1573163955497!5m2!1sen!2sus" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>     
-                        <%} else if (Hike.title === "Cleetwood Cove Trail") {%>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64075.621914801886!2d-122.11550645042507!3d42.97914701339345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c63926495f3897%3A0x8948c7deeecd543a!2sCleetwood%20Cove%20Trail!5e0!3m2!1sen!2sus!4v1573164770754!5m2!1sen!2sus" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        <%} else if (Hike.title === "Discovery Point Trail") {%>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.053138312399!2d-122.1534596497104!3d42.91392027905129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66610339bf1fb151!2sDiscovery%20Point%20Trail!5e0!3m2!1sen!2sus!4v1573165546309!5m2!1sen!2sus" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        <%}%>
+                        <iframe src="<%=Hike.map%>" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>

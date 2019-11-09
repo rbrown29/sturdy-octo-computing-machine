@@ -4,7 +4,8 @@ const hikeSchema = new mongoose.Schema({
 	title: {type: String, require: true, unique: true},
 	description: String,
 	img: String,
-	image: String
+	map: String,
+	difficulty: String
 
 }, {timestamps: true});
 
