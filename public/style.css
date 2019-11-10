@@ -35,6 +35,7 @@ h2, h1 {
 
 	text-align: center;
     color: green;
+    font-family: 'Baloo', cursive;
 }
 
 h6 {
@@ -51,6 +52,12 @@ h6 {
 
 a {
 	font-family: 'Aclonica';font-size: 18px;
+}
+
+.a1 {
+	/*font-family: 'Monoton', cursive;*/
+	font-family: 'Baloo', cursive;
+	font-size: 22px;
 }
 
 nav {
@@ -133,18 +140,6 @@ input {
 	color: green;
 }
 
-.div6{
-	width: 730px;
-	font-size: 60px;
-	line-height: 3;
-	font-family:'lucida grande',
-	tahoma,
-	verdana,
-	arial,
-	sans-serif;
-	color: green;
-}
-
 .form-control-group {
 	display: flex;
 	justify-content: center;
@@ -159,7 +154,9 @@ input {
 	left: 5px;
 	background-color: green;
 	visibility: hidden;
-	border-radius: 8px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px 0px black;
+    border: 2px solid green;
     background-color: green;
     color: white;
     border-color: green;
@@ -184,7 +181,26 @@ input {
 .lbttn {
 	display: flex;
 	justify-content: space-around;
-	color: green;
+	color: black;
+}
+
+.lbttn2 {
+	border: 2px solid green;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px 0px black;
+    border: 2px solid green;
+    width: 400px;
+    background-color: green;
+}
+
+.lbttn3 {
+    border: 0px;
+	margin: 100px;
+	width: 300px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: green;
 }
 
 
@@ -197,6 +213,8 @@ input {
 .tooltip-text {
 	font-family: 'Aclonica';font-size: 12px;
 }
+
+
 
 
 

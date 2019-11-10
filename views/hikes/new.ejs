@@ -3,21 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title>Oregon Hikes</title>
+         <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet"> 
          <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
     </head>
     <body>
-       <center><div class="div6">H̲̲̿ɪ̲̲̿ᴋ̲̲̿ɪ̲̲̿ɴ̲̲̿ɢ̲̲̿</div></center>
-      <div class="lbttn">
-        <form action="/hike" method="POST">
-            <input type="text" name="title" placeholder="TITLE"><br>
-            <input type="text" name="img" placeholder="IMAGE URL"><br>
-            <input type="text" name="map" placeholder="MAP URL"><br>
-            <input type="text" name="difficulty" placeholder="DIFFICULTY Easy/Moderate/Hard"><br>
-            <textarea class="textarea" type="textarea" name="description" placeholder="DESCRIPTION"></textarea><br>
-            <input type="submit" value="Create Hike"/>
-        </form>
-        </div>
+        <h1 class="h1">New Hike</h1>
+        <div class="lbttn">
+            <div class="lbttn2">
+                <div class="lbttn3">
+                   <form action="/hike" method="POST">
+                     <input type="text" name="title" placeholder="TITLE">
+                     <input type="text" name="img" placeholder="IMAGE URL">
+                     <input type="text" name="map" placeholder="MAP URL">
+                     <input type="text" name="difficulty" placeholder="DIFFICULTY Easy/Moderate/Hard"><br>
+                     <textarea class="textarea" type="textarea" name="description" placeholder="DESCRIPTION"></textarea>
+                     <input type="submit" value="Create Hike"/>
+                    </form>
+                </div>
+            </div>
       </div>
     </body>
 </html>

@@ -8,18 +8,22 @@
                 crossorigin="anonymous">
         </script>
         <script type="text/javascript" src="../app.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
     </head>
     <body>
        <h1 class="h1">New User</h1>
        <div class="lbttn">
-        <form action="/users" method="POST">
-          Username:<input type="text" name="username"><br>
-          Password: <input type="password" name="password"><br>
-          <input type="submit" name="Register">
-        </form>             
-                
+          <div class="lbttn2">
+             <div class="lbttn3">
+              <form action="/users" method="POST">
+                <input type="text" name="username" placeholder="Username"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <input type="submit" name="Register">
+              </form>             
+             </div>
+          </div>
        </div>
     </body>
 </html>

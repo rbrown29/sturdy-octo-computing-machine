@@ -14,7 +14,7 @@ https://evening-plateau-51206.herokuapp.com/
 * View maps of listed trails(Google Maps)
 * See google reviews
 * Know the difficulty of the trail
-* Delete a trail (Shorty will be removed. Will only be for admin use)
+* Delete a trail
 
 ### Editing or Adding Map URL
 
