@@ -23,3 +23,35 @@ https://evening-plateau-51206.herokuapp.com/
 
 ![Google Map example](images/G00GLEMAP.png?raw=true{:height="50px"width="50px"})
 
+### Languages Used
+
+* HTML
+* CSS
+* JAVASCRIPT
+* JQUERY
+
+### Tecnologies Used
+
+* EXPRESS
+* NODE JS
+* MONGO DB
+* EJS
+* MONGOOSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

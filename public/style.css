@@ -22,7 +22,7 @@ img {
 
 /*body background color*/
 body {
-	background-color: #f2f2f2;
+	background-color: #f2f2f2; 
 }
 
 /*align and color headers*/
@@ -110,13 +110,13 @@ input {
 	color: green;
 	border-color: green;
 }
-
+/*****Mustard button********/
 .button-primary-outlined {
 	width: 200px;
 	display: flex;
 	justify-content: center;
 }
-
+/********Div styleing************/
 .div1 {
 	display: flex;
 	justify-content: space-around;
@@ -126,7 +126,7 @@ input {
 	justify-content: flex-end;
 }
 
-/*hiking logo homepage style*/
+/*********hiking logo homepage style***********/
 .div5 {
 	width: 730px;
 	font-size: 100px;
@@ -140,13 +140,14 @@ input {
 	color: green;
 }
 
+/******Mustard position********/
 .form-control-group {
 	display: flex;
 	justify-content: center;
 }
 
 
-/*modal dialog box*/
+/*********modal dialog box*************/
 #dialog {
 	font-family: 'Aclonica';font-size: 15px;
 	position: absolute;
@@ -165,12 +166,12 @@ input {
     z-index: 1;
 }
 
-/*modal desription button*/
+/**********modal desription button********/
 #open {
     font-family: 'Aclonica'; font-size: 18px;
 }
 
-/*module button style*/
+/********module button style***********/
 .close {
 	border-radius: 8px;
     background-color: green;
@@ -178,6 +179,7 @@ input {
     border-color: green;
 }
 
+/*************Style for forms****************/
 .lbttn {
 	display: flex;
 	justify-content: space-around;
@@ -204,12 +206,12 @@ input {
 }
 
 
-/*no border on tooltip for logout*/
+/*******no border on tooltip for logout**********/
 .tooltip {
 	border-style: none;
 }
 
-/*tool tip text font*/
+/*******tool tip text font*********/
 .tooltip-text {
 	font-family: 'Aclonica';font-size: 12px;
 }
