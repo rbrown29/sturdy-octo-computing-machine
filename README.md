@@ -15,6 +15,7 @@ https://evening-plateau-51206.herokuapp.com/
 * See google reviews
 * Know the difficulty of the trail
 * Delete a trail
+* Click Description for modal view
 
 ### Editing or Adding Map URL
 
@@ -37,6 +38,7 @@ https://evening-plateau-51206.herokuapp.com/
 * MONGO DB
 * EJS
 * MONGOOSE
+* BCRYPT (PASSWORD ENCRYPTION)
 
 
 
