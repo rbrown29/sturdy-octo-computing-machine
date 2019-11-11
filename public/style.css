@@ -22,13 +22,15 @@ img {
 
 /*body background color*/
 body {
-	background-color: #f2f2f2; 
+	background-color: whitesmoke; 
+	opacity: 0.9;
 }
 
 /*align and color headers*/
 h2, h1 {
 	text-align: center;
 	color: white;
+	text-shadow: 3px 3px black;
 }
 
 .h1 {
@@ -36,6 +38,7 @@ h2, h1 {
 	text-align: center;
     color: green;
     font-family: 'Baloo', cursive;
+    text-shadow: 3px 3px black;
 }
 
 h6 {
@@ -57,7 +60,7 @@ a {
 .a1 {
 	/*font-family: 'Monoton', cursive;*/
 	font-family: 'Baloo', cursive;
-	font-size: 22px;
+	font-size: 30px;
 }
 
 nav {
@@ -129,15 +132,16 @@ input {
 /*********hiking logo homepage style***********/
 .div5 {
 	width: 730px;
-	font-size: 100px;
+	font-size: 150px;
 	line-height: 3;
-	font-family:'lucida grande',
+	font-family: 'Baloo', cursive,
 	tahoma,
 	verdana,
 	arial,
 	sans-serif;
 	margin: -13px 0 30px 0;
 	color: green;
+	text-shadow: 10px 10px black;
 }
 
 /******Mustard position********/
