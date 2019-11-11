@@ -1,5 +1,7 @@
 # Oregon Hikes
 
+### Author and Code design by Richard Brown
+
 ### Links To Gitub project and live on Heroku.
  
 https://github.com/rbrown29/sturdy-octo-computing-machine
