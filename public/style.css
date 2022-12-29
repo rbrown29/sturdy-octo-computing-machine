@@ -21,6 +21,39 @@ img {
 }
 
 /*body background color*/
+.b1 {
+  height: 100%;
+  max-height: 600px;
+  width: 1000px;
+  background-color: hsla(200,40%,30%,.4);
+  background-image:   
+    url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/glacier-national-park-grinnell-lake-trail-royalty-free-image-1591628033.jpg);
+  background-position: 
+    0 20%,
+    0 100%,
+    0 50%,
+    0 100%,
+    0 0;
+  background-size: 
+    1900px,
+    800px,
+    500px 200px,
+    1000px,
+    400px 260px;
+  animation: 2000s para;
+  }
+
+@keyframes para {
+  100% {
+    background-position: 
+      -5000px 20%,
+      -800px 95%,
+      500px 50%,
+      1000px 100%,
+      400px 0;
+    }
+  }
+
 body {
 	background-color: whitesmoke; 
 	opacity: 0.9;
@@ -39,6 +72,7 @@ h2, h1 {
     color: green;
     font-family: 'Baloo', cursive;
     text-shadow: 3px 3px black;
+	margin-left: 5em;
 }
 
 h6 {
@@ -61,6 +95,7 @@ a {
 	/*font-family: 'Monoton', cursive;*/
 	font-family: 'Baloo', cursive;
 	font-size: 30px;
+	margin-left: 8em;
 }
 
 nav {
@@ -142,6 +177,7 @@ input {
 	margin: -13px 0 30px 0;
 	color: green;
 	text-shadow: 10px 10px black;
+	margin-left: 1.5em;
 }
 
 /******Mustard position********/
