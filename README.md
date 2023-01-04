@@ -47,6 +47,11 @@ https://github.com/rbrown29/sturdy-octo-computing-machine
 * Google Fonts
 * My Custom CSS
 
+![Oregon Hikes](images/pic1.png?raw=true{:height="50px"width="50px"})
+![Oregon Hikes](images/pic4.png?raw=true{:height="50px"width="50px"})
+![Oregon Hikes](images/pic3.png?raw=true{:height="50px"width="50px"})
+![Oregon Hikes](images/pic2.png?raw=true{:height="50px"width="50px"})
+
 
 
 
