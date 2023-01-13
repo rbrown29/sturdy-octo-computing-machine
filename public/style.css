@@ -28,30 +28,7 @@ img {
   background-color: hsla(200,40%,30%,.4);
   background-image:   
     url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/glacier-national-park-grinnell-lake-trail-royalty-free-image-1591628033.jpg);
-  background-position: 
-    0 20%,
-    0 100%,
-    0 50%,
-    0 100%,
-    0 0;
-  background-size: 
-    1900px,
-    800px,
-    500px 200px,
-    1000px,
-    400px 260px;
-  animation: 2000s para;
-  }
-
-@keyframes para {
-  100% {
-    background-position: 
-      -5000px 20%,
-      -800px 95%,
-      500px 50%,
-      1000px 100%,
-      400px 0;
-    }
+  background-size: cover;
   }
 
 body {
@@ -264,8 +241,433 @@ input {
 	font-family: 'Aclonica';font-size: 12px;
 }
 
+@media only screen and (max-width: 600px) {
+	h2 {
+		font-family: 'Aclonica';font-size: 20px;
+		font-size: 20px;
+	}
+	.div1 {
+		display: flex;
+		justify-content: center;
+	}
+	.div2 {
+		display: flex;
+		justify-content: center;
+	}
+	.div5 {
+		width: 730px;
+		font-size: 150px;
+		line-height: 3;
+		font-family: 'Baloo', cursive,
+		tahoma,
+		verdana,
+		arial,
+		sans-serif;
+		margin: -13px 0 30px 0;
+		color: green;
+		text-shadow: 10px 10px black;
+		margin-left: 1.5em;
+	}
+	.h1 {
+		text-align: center;
+		color: green;
+		font-family: 'Baloo', cursive;
+		text-shadow: 3px 3px black;
+		margin-left: 0em;
+	}
+	.h {
+		text-align: center;
+		color: green;
+		font-family: 'Baloo', cursive;
+		text-shadow: 3px 3px black;
+		margin-left: 0em;
+	}
+	.h6div {
+		font-family: 'Aclonica';font-size: 22px;
+		color: green;
+	}
+	.a1 {
+		/*font-family: 'Monoton', cursive;*/
+		font-family: 'Baloo', cursive;
+		font-size: 30px;
+		margin-left: 0em;
+	}
+	.p1div {
+		border: 1px solid orange;
+		width: 150px;
+		height: 25px;
+		border-radius: 3px;
+		background-color: orange;
+	}
+	.p2div {
+		border: 1px solid red;
+		width: 120px;
+		height: 25px;
+		border-radius: 3px;
+		background-color: red;
+	}
+	.p4div {
+		border: 1px solid blue;
+		width: 120px;
+		height: 25px;
+		border-radius: 3px;
+		background-color: blue;
+	}
+	.form1 {
+		border: solid green;
+	}
+	.form2 {
+		color: green;
+	}
+	.textarea {
+		width: 300px;
+		height: 100px;
+		color: green;
+	}
+	input {
+		color: green;
+		border-color: green;
+	}
+}
+@media only screen and (min-width: 600px) {
+	h2 {
+		font-family: 'Baloo', cursive;
+		font-size: 30px;
+	}
+	.div1 {
+		display: flex;
+		justify-content: space-around;
+	}
+	.div2 {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.div5 {
+		width: 730px;
+		font-size: 150px;
+		line-height: 3;
+		font-family: 'Baloo', cursive,
+		tahoma,
+		verdana,
+		arial,
+		sans-serif;
+		margin: -13px 0 30px 0;
+		color: green;
+		text-shadow: 10px 10px black;
+		margin-left: 1.5em;
+	}
+	.h1 {
+		text-align: center;
+		color: green;
+		font-family: 'Baloo', cursive;
+		text-shadow: 3px 3px black;
+		margin-left: 0em;
+	}
+	.h {
+		text-align: center;
+		color: green;
+		font-family: 'Baloo', cursive;
+		text-shadow: 3px 3px black;
+		margin-left: 0em;
+	}
+	.h6div {
+		font-family: 'Aclonica';font-size: 22px;
+		color: green;
+	}
+	.a1 {
+		/*font-family: 'Monoton', cursive;*/
+		font-family: 'Baloo', cursive;
+		font-size: 30px;
+		margin-left: 0em;
+	}
+	.p1div {
+		border: 1px solid orange;
+		width: 150px;
+		height: 25px;
+		border-radius: 3px;
+		background-color: orange;
+	}
+	.p2div {
+		border: 1px solid red;
+		width: 120px;
+		height: 25px;
+		border-radius: 3px;
+		background-color: red;
+	}
+	.p4div {
+		border: 1px solid blue;
+		width: 120px;
+		height: 25px;
+		border-radius: 3px;
+		background-color: blue;
+	}
+	.form1 {
+		border: solid green;
+	}
+	.form2 {
+		color: green;
+	}
+	.textarea {
+		width: 300px;
+		height: 100px;
+		color: green;
+	}
+	input {
+		color: green;
+		border-color: green;
+	}
+}
 
+	@media only screen and (min-width: 768px) {
+		h2 {
+			font-size: 30px;
+		}
+		.div1 {
+			display: flex;
+			justify-content: space-around;
+		}
+		.div2 {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.div5 {
+			width: 730px;
+			font-size: 150px;
+			line-height: 3;
+			font-family: 'Baloo', cursive,
+			tahoma,
+			verdana,
+			arial,
+			sans-serif;
+			margin: -13px 0 30px 0;
+			color: green;
+			text-shadow: 10px 10px black;
+			margin-left: 1.5em;
+		}
+		.h1 {
+			text-align: center;
+			color: green;
+			font-family: 'Baloo', cursive;
+			text-shadow: 3px 3px black;
+			margin-left: 0em;
+		}
+		.h {
+			text-align: center;
+			color: green;
+			font-family: 'Baloo', cursive;
+			text-shadow: 3px 3px black;
+			margin-left: 0em;
+		}
+		.h6div {
+			font-family: 'Aclonica';font-size: 22px;
+			color: green;
+		}
+		.a1 {
+			/*font-family: 'Monoton', cursive;*/
+			font-family: 'Baloo', cursive;
+			font-size: 30px;
+			margin-left: 0em;
+		}
+		.p1div {
+			border: 1px solid orange;
+			width: 150px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: orange;
+		}
+		.p2div {
+			border: 1px solid red;
+			width: 120px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: red;
+		}
+		.p4div {
+			border: 1px solid blue;
+			width: 120px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: blue;
+		}
+		.form1 {
+			border: solid green;
+		}
+		.form2 {
+			color: green;
+		}
+		.textarea {
+			width: 300px;
+			height: 100px;
+			color: green;
+		}
+	};
+	@media only screen and (min-width: 992px) {
+		h2 {
+			font-size: 30px;
+		}
+		.div1 {
+			display: flex;
+			justify-content: space-around;
+		}
+		.div2 {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.div5 {
+			width: 730px;
+			font-size: 150px;
+			line-height: 3;
+			font-family: 'Baloo', cursive,
+			tahoma,
+			verdana,
+			arial,
+			sans-serif;
+			margin: -13px 0 30px 0;
+			color: green;
+			text-shadow: 10px 10px black;
+			margin-left: 1.5em;
+		}
+		.h1 {
+			text-align: center;
+			color: green;
+			font-family: 'Baloo', cursive;
+			text-shadow: 3px 3px black;
+			margin-left: 0em;
+		}
+		.h {
+			text-align: center;
+			color: green;
+			font-family: 'Baloo', cursive;
+			text-shadow: 3px 3px black;
+			margin-left: 0em;
+		}
+		.h6div {
+			font-family: 'Aclonica';font-size: 22px;
+			color: green;
+		}
+		.a1 {
+			/*font-family: 'Monoton', cursive;*/
+			font-family: 'Baloo', cursive;
+			font-size: 30px;
+			margin-left: 0em;
+		}
+		.p1div {
+			border: 1px solid orange;
+			width: 150px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: orange;
+		}
+		.p2div {
+			border: 1px solid red;
+			width: 120px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: red;
+		}
+		.p4div {
+			border: 1px solid blue;
+			width: 120px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: blue;
+		}
+		.form1 {
+			border: solid green;
+		}
+		.form2 {
+			color: green;
+		}
+		.textarea {
+			width: 300px;
+			height: 100px;
+			color: green;
 
+		}
+	};
+	@media only screen and (min-width: 1200px) {
+		h2 {
+			font-size: 50px;
+		}
+		.div1 {
+			display: flex;
+			justify-content: space-around;
+		}
+		.div2 {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.div5 {
+			width: 730px;
+			font-size: 150px;
+			line-height: 3;
+			font-family: 'Baloo', cursive,
+			tahoma,
+			verdana,
+			arial,
+			sans-serif;
+			margin: -13px 0 30px 0;
+			color: green;
+			text-shadow: 10px 10px black;
+			margin-left: 1.5em;
+		}
+		.h1 {
+			text-align: center;
+			color: green;
+			font-family: 'Baloo', cursive;
+			text-shadow: 3px 3px black;
+			margin-left: 0em;
+		}
+		.h {
+			text-align: center;
+			color: green;
+			font-family: 'Baloo', cursive;
+			text-shadow: 3px 3px black;
+			margin-left: 0em;
+		}
+		.h6div {
+			font-family: 'Aclonica';font-size: 22px;
+			color: green;
+		}
+		.a1 {
+			/*font-family: 'Monoton', cursive;*/
+			font-family: 'Baloo', cursive;
+			font-size: 30px;
+			margin-left: 0em;
+		}
+		.p1div {
+			border: 1px solid orange;
+			width: 150px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: orange;
+		}
+		.p2div {
+			border: 1px solid red;
+			width: 120px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: red;
+		}
+		.p4div {
+			border: 1px solid blue;
+			width: 120px;
+			height: 25px;
+			border-radius: 3px;
+			background-color: blue;
+		}
+		.form1 {
+			border: solid green;
+		}
+		.form2 {
+			color: green;
+		}
+		.textarea {
+			width: 300px;
+			height: 100px;
+			color: green;
+		}
+	}
 
 
 
