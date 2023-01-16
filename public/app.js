@@ -18,12 +18,17 @@ $(() => {
          $(".lbttn").css("visibility", "visible");
        });
 });
-
+///////////////////////////////////////////////////
+// Add event listener to form
+///////////////////////////////////////////////////
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   validateForm();
 });
 
+///////////////////////////////////////////////////
+// Validate form
+///////////////////////////////////////////////////
 function validateForm() {
   var password = document.forms["myForm"]["password"].value;
   var userName = document.forms["myForm"]["username"].value;

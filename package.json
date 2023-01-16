@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/rbrown29/sturdy-octo-computing-machine#readme",
   "dependencies": {
+    "alert": "^5.1.4",
     "bcrypt": "^5.1.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.8",
