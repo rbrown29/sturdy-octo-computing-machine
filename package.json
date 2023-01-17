@@ -2,7 +2,7 @@
   "name": "sturdy-octo-computing-machine",
   "version": "1.0.0",
   "engines": {
-    "node": "10.16.3"
+    "node": "16.17.0"
   },
   "description": "",
   "main": "sever.js",
