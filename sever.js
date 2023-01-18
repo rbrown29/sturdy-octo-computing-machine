@@ -5,6 +5,8 @@ const mongoose = require("mongoose");
 const app = express();
 const db = mongoose.connection;
 const session = require("express-session"); // add session
+const morgan = require("morgan"); // add morgan
+const cors = require("cors"); // add cors
 
 
 require('dotenv').config(); // add dotenv
@@ -36,6 +38,10 @@ app.use(session({  // add session
 	  resave: false,
 	  saveUninitialized: false
 }));
+app.use(morgan("combined")); // add morgan
+app.use(cors(
+	{origin: "http://localhost:3003", credentials: true}
+)); // add cors
 
 ///////////////////////////////////////////////
 // controllers
