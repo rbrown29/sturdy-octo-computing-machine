@@ -47,6 +47,19 @@ https://github.com/rbrown29/sturdy-octo-computing-machine
 * Google Fonts
 * My Custom CSS
 
+## Getting Started
+
+1. Ensure you have Node.js installed.
+2. Create a free [Mongo Atlas](https://www.mongodb.com/atlas/database) database online or start a local MongoDB database.
+3. Create a `server/.env` file with a `MONGO_URL` property set to your MongoDB connection string.
+4. In the terminal, run: `npm install`
+
+## Running the Project
+
+1. In the terminal, run: `npm start` or `node sever.js` or `nodemon sever.js`
+2. Browse to frontend at [localhost:3003](http://localhost:3003).
+3. Sign up and login to add, edit, or delete hikes.
+
 ![Oregon Hikes](images/pic1.png?raw=true{:height="50px"width="50px"})
 ![Oregon Hikes](images/pic4.png?raw=true{:height="50px"width="50px"})
 ![Oregon Hikes](images/pic3.png?raw=true{:height="50px"width="50px"})
