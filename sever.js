@@ -35,10 +35,10 @@ app.use(express.json());
 app.use(methodOverride('_method')); 
 app.use(session({  // add session
 	  secret: "thereIsNoFateButWhatYouMake", 
-	  resave: false,
-	  saveUninitialized: false
+	  resave: true,
+	  saveUninitialized: true
 }));
-app.use(morgan("combined")); // add morgan
+app.use(morgan("dev")); // add morgan
 app.use(cors(
 	{origin: "http://localhost:3003", credentials: true}
 )); // add cors

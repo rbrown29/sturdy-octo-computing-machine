@@ -23,19 +23,15 @@ img {
 
 /*body background color*/
 .b1 {
-    height: auto;
+	height: 100%;
 	background-color: hsla(200, 40%, 30%, .4);
 	background-image:
-		url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/glacier-national-park-grinnell-lake-trail-royalty-free-image-1591628033.jpg);
+	url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/glacier-national-park-grinnell-lake-trail-royalty-free-image-1591628033.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
+	overflow: auto;
 }
-
-body {
-	background-color: whitesmoke;
-	opacity: 0.9;
-}
-
 /*align and color headers*/
 h2,
 h1 {
@@ -88,6 +84,7 @@ a {
 	font-family: 'Baloo', cursive;
 	font-size: 3vw;
 	margin-left: 8em;
+	filter: blur(0px);
 }
 
 nav {
