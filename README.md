@@ -1,5 +1,7 @@
 # Oregon Hikes
 
+![oregon](https://user-images.githubusercontent.com/53094729/233315729-34413be8-15cb-46d1-84fc-2b97a2f54a9c.gif)
+
 ### Author and Code design by Richard Brown
 
 ### Links To Gitub project and live Site.
