@@ -27,7 +27,7 @@ https://github.com/rbrown29/sturdy-octo-computing-machine
 * Must be a url to google maps
 * Only the url, not the iframe
 
-![Google Map example](images/G00GLEMAP.png?raw=true{:height="50px"width="50px"})
+<img src="images/G00GLEMAP.png" />
 
 ### Languages Used
 
@@ -64,10 +64,10 @@ https://github.com/rbrown29/sturdy-octo-computing-machine
 2. Browse to frontend at [localhost:3003](http://localhost:3003).
 3. Sign up and login to add, edit, or delete hikes.
 
-![Oregon Hikes](images/pic1.png?raw=true{:height="50px"width="50px"})
-![Oregon Hikes](images/pic4.png?raw=true{:height="50px"width="50px"})
-![Oregon Hikes](images/pic3.png?raw=true{:height="50px"width="50px"})
-![Oregon Hikes](images/pic2.png?raw=true{:height="50px"width="50px"})
+<img src="images/pic1.png" />
+<img src="images/pic4.png" />
+<img src="images/pic3.png" />
+
 
 
 
