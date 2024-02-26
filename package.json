@@ -5,10 +5,12 @@
     "node": "16.17.0"
   },
   "description": "",
-  "main": "sever.js",
+  "main": "home.ejs",
   "scripts": {
     "start": "node sever.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon sever.js",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
     "mongoose": "^5.7.8",
     "morgan": "^1.10.0",
     "mustard-ui": "0.0.8",
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.1.0",
+    "vite": "^5.1.4"
   }
 }
