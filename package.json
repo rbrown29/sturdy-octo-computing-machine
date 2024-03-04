@@ -2,12 +2,14 @@
   "name": "sturdy-octo-computing-machine",
   "version": "1.0.0",
   "engines": {
-    "node": "20.3.0"
+    "node": "16.17.0"
   },
   "description": "",
-  "main": "sever.js",
+  "main": "home.ejs",
   "scripts": {
-    "start": "node sever.js",
+    "start": "pm2 start sever.js --watch no-daemon",
+    "stop": "pm2 stop sever.js ",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon sever.js"
   },
   "repository": {
@@ -25,13 +27,19 @@
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.8",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.7.8",
     "morgan": "^1.10.0",
     "mustard-ui": "0.0.8",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "pm2": "^5.3.1",
+    "vite": "^5.1.4",
+    "webpack": "^5.90.3"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
