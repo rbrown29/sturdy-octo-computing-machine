@@ -1,764 +1,729 @@
 /*CSS for Oregon Hikes*/
 
 img {
-	height: 200px;
-	width: 200px;
+  height: 200px;
+  width: 200px;
 }
 
 .img1 {
-	height: 400px;
-	width: 400px;
+  height: 400px;
+  width: 400px;
 }
 
 /*image in module size*/
 .img3 {
-	height: 250px;
-	width: 300px;
+  height: 250px;
+  width: 300px;
 }
 
 .img4 {
-	height: 500px;
-	width: 500px;
+  height: 500px;
+  width: 500px;
 }
 
 /*body background color*/
 .b1 {
-	height: 100%;
-	background-color: hsla(200, 40%, 30%, .4);
-	background-image:
-	url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/glacier-national-park-grinnell-lake-trail-royalty-free-image-1591628033.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	overflow: auto;
+  height: 100%;
+  background-color: hsla(200, 40%, 30%, 0.4);
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/glacier-national-park-grinnell-lake-trail-royalty-free-image-1591628033.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: auto;
 }
 /*align and color headers*/
 h2,
 h1 {
-	text-align: center;
-	color: white;
-	text-shadow: 3px 3px black;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px black;
 }
 
 .h1 {
-
-	text-align: center;
-	color: green;
-	font-family: 'Baloo', cursive;
-	text-shadow: 3px 3px black;
-	margin-left: 0em;
+  text-align: center;
+  color: green;
+  font-family: "Baloo", cursive;
+  text-shadow: 3px 3px black;
+  margin-left: 0em;
 }
 
 .h {
-	text-align: center;
-	color: green;
-	font-family: 'Baloo', cursive;
-	text-shadow: 3px 3px black;
-	margin-left: 5em;
-	font-size: 7vw;
-	margin-top: 2em;
-	margin-bottom: auto;
+  text-align: center;
+  color: green;
+  font-family: "Baloo", cursive;
+  text-shadow: 3px 3px black;
+  margin-left: 5em;
+  font-size: 7vw;
+  margin-top: 2em;
+  margin-bottom: auto;
 }
 
 h6 {
-	font-family: 'Aclonica';
-	font-size: 22px;
-	color: green;
-	position: absolute;
-	left: 15px;
+  font-family: "Aclonica";
+  font-size: 22px;
+  color: green;
+  position: absolute;
+  left: 15px;
 }
 
 .h6div {
-	font-family: 'Aclonica';
-	font-size: 22px;
-	color: green;
+  font-family: "Aclonica";
+  font-size: 22px;
+  color: green;
 }
 
 a {
-	font-family: 'Aclonica';
-	font-size: 18px;
+  font-family: "Aclonica";
+  font-size: 18px;
 }
 
 .a1 {
-	/*font-family: 'Monoton', cursive;*/
-	font-family: 'Baloo', cursive;
-	font-size: 3vw;
-	margin-left: 8em;
-	filter: blur(0px);
+  /*font-family: 'Monoton', cursive;*/
+  font-family: "Baloo", cursive;
+  font-size: 3vw;
+  margin-left: 8em;
+  filter: blur(0px);
 }
 
 nav {
-	background-color: green;
+  background-color: green;
 }
 
 .p4 {
-	color: white;
-	text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .p1div {
-	border: 1px solid orange;
-	width: 150px;
-	height: 25px;
-	border-radius: 3px;
-	background-color: orange;
+  border: 1px solid orange;
+  width: 150px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: orange;
 }
 
 .p2div {
-	border: 1px solid red;
-	width: 120px;
-	height: 25px;
-	border-radius: 3px;
-	background-color: red;
+  border: 1px solid red;
+  width: 120px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: red;
 }
 
 .p4div {
-	border: 1px solid blue;
-	width: 120px;
-	height: 25px;
-	border-radius: 3px;
-	background-color: blue;
+  border: 1px solid blue;
+  width: 120px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: blue;
 }
 
 .form1 {
-	border: solid green;
+  border: solid green;
 }
 
 .form2 {
-	color: green;
+  color: green;
 }
 
 .textarea {
-	width: 300px;
-	height: 100px;
-	color: green;
+  width: 300px;
+  height: 100px;
+  color: green;
 }
 
 input {
-	color: green;
-	border-color: green;
+  color: green;
+  border-color: green;
 }
 
 /*****Mustard button********/
 .button-primary-outlined {
-	width: 200px;
-	display: flex;
-	justify-content: center;
+  width: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 /********Div styleing************/
 .div1 {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .div2 {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*********hiking logo homepage style***********/
 .div5 {
-	width: 730px;
-	font-size: 150px;
-	line-height: 3;
-	font-family: 'Baloo', cursive,
-		tahoma,
-		verdana,
-		arial,
-		sans-serif;
-	margin: -13px 0 30px 0;
-	color: green;
-	text-shadow: 10px 10px black;
-	margin-left: 1.5em;
+  width: 730px;
+  font-size: 150px;
+  line-height: 3;
+  font-family: "Baloo", cursive, tahoma, verdana, arial, sans-serif;
+  margin: -13px 0 30px 0;
+  color: green;
+  text-shadow: 10px 10px black;
+  margin-left: 1.5em;
 }
 
 /******Mustard position********/
 .form-control-group {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 /*********modal dialog box*************/
 #dialog {
-	font-family: 'Aclonica';
-	font-size: 15px;
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	background-color: green;
-	visibility: hidden;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 10px 10px 5px 0px black;
-	border: 2px solid green;
-	background-color: green;
-	color: white;
-	border-color: green;
-	margin: 200px;
-	padding: 20px;
-	z-index: 1;
+  font-family: "Aclonica";
+  font-size: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: green;
+  visibility: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 5px 0px black;
+  border: 2px solid green;
+  background-color: green;
+  color: white;
+  border-color: green;
+  margin: 200px;
+  padding: 20px;
+  z-index: 1;
 }
 
 /**********modal desription button********/
 #open {
-	font-family: 'Aclonica';
-	font-size: 18px;
+  font-family: "Aclonica";
+  font-size: 18px;
 }
 
 /********module button style***********/
 .close {
-	border-radius: 8px;
-	background-color: green;
-	color: white;
-	border-color: green;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  border-color: green;
 }
 
 /*************Style for forms****************/
 .lbttn {
-	display: flex;
-	justify-content: space-around;
-	color: black;
+  display: flex;
+  justify-content: space-around;
+  color: black;
 }
 
 .lbttn2 {
-	border: 2px solid green;
-	display: flex;
-	justify-content: center;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 10px 10px 5px 0px black;
-	border: 2px solid green;
-	width: 400px;
-	background-color: green;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 5px 0px black;
+  border: 2px solid green;
+  width: 400px;
+  background-color: green;
 }
 
 .lbttn3 {
-	border: 0px;
-	margin: 100px;
-	width: 300px;
-	border-radius: 10px 10px 10px 10px;
-	background-color: green;
+  border: 0px;
+  margin: 100px;
+  width: 300px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: green;
 }
-
 
 /*******no border on tooltip for logout**********/
 .tooltip {
-	border-style: none;
+  border-style: none;
 }
 
 /*******tool tip text font*********/
 .tooltip-text {
-	font-family: 'Aclonica';
-	font-size: 12px;
+  font-family: "Aclonica";
+  font-size: 12px;
 }
 
-
-
 @media only screen and (max-width: 600px) {
-	h2 {
-		font-family: 'Aclonica';
-		font-size: 20px;
-		font-size: 20px;
-	}
+  h2 {
+    font-family: "Aclonica";
+    font-size: 20px;
+    font-size: 20px;
+  }
 
-	.div1 {
-		display: flex;
-		justify-content: center;
-	}
+  .div1 {
+    display: flex;
+    justify-content: center;
+  }
 
-	.div2 {
-		display: flex;
-		justify-content: center;
-	}
+  .div2 {
+    display: flex;
+    justify-content: center;
+  }
 
-	.div5 {
-		width: 730px;
-		font-size: 150px;
-		line-height: 3;
-		font-family: 'Baloo', cursive,
-			tahoma,
-			verdana,
-			arial,
-			sans-serif;
-		margin: -13px 0 30px 0;
-		color: green;
-		text-shadow: 10px 10px black;
-		margin-left: 1.5em;
-	}
+  .div5 {
+    width: 730px;
+    font-size: 150px;
+    line-height: 3;
+    font-family: "Baloo", cursive, tahoma, verdana, arial, sans-serif;
+    margin: -13px 0 30px 0;
+    color: green;
+    text-shadow: 10px 10px black;
+    margin-left: 1.5em;
+  }
 
-	.h1 {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h1 {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h6div {
-		font-family: 'Aclonica';
-		font-size: 22px;
-		color: green;
-	}
+  .h6div {
+    font-family: "Aclonica";
+    font-size: 22px;
+    color: green;
+  }
 
-	.a1 {
-		/*font-family: 'Monoton', cursive;*/
-		font-family: 'Baloo', cursive;
-		margin-left: 2em;
-		margin-right: 2em;
-		margin-bottom: auto;
-	}
+  .a1 {
+    /*font-family: 'Monoton', cursive;*/
+    font-family: "Baloo", cursive;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: auto;
+  }
 
-	.p1div {
-		border: 1px solid orange;
-		width: 150px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: orange;
-	}
+  .p1div {
+    border: 1px solid orange;
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: orange;
+  }
 
-	.p2div {
-		border: 1px solid red;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: red;
-	}
+  .p2div {
+    border: 1px solid red;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: red;
+  }
 
-	.p4div {
-		border: 1px solid blue;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: blue;
-	}
+  .p4div {
+    border: 1px solid blue;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: blue;
+  }
 
-	.form1 {
-		border: solid green;
-	}
+  .form1 {
+    border: solid green;
+  }
 
-	.form2 {
-		color: green;
-	}
+  .form2 {
+    color: green;
+  }
 
-	.textarea {
-		width: 300px;
-		height: 100px;
-		color: green;
-	}
+  .textarea {
+    width: 300px;
+    height: 100px;
+    color: green;
+  }
 
-	input {
-		color: green;
-		border-color: green;
-	}
+  input {
+    color: green;
+    border-color: green;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-	h2 {
-		font-family: 'Baloo', cursive;
-		font-size: 30px;
-	}
+  h2 {
+    font-family: "Baloo", cursive;
+    font-size: 30px;
+  }
 
-	.div1 {
-		display: flex;
-		justify-content: space-around;
-	}
+  .div1 {
+    display: flex;
+    justify-content: space-around;
+  }
 
-	.div2 {
-		display: flex;
-		justify-content: flex-end;
-	}
+  .div2 {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-	.div5 {
-		width: 730px;
-		font-size: 150px;
-		line-height: 3;
-		font-family: 'Baloo', cursive,
-			tahoma,
-			verdana,
-			arial,
-			sans-serif;
-		margin: -13px 0 30px 0;
-		color: green;
-		text-shadow: 10px 10px black;
-		margin-left: 1.5em;
-	}
+  .div5 {
+    width: 730px;
+    font-size: 150px;
+    line-height: 3;
+    font-family: "Baloo", cursive, tahoma, verdana, arial, sans-serif;
+    margin: -13px 0 30px 0;
+    color: green;
+    text-shadow: 10px 10px black;
+    margin-left: 1.5em;
+  }
 
-	.h1 {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h1 {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h6div {
-		font-family: 'Aclonica';
-		font-size: 22px;
-		color: green;
-	}
+  .h6div {
+    font-family: "Aclonica";
+    font-size: 22px;
+    color: green;
+  }
 
-	.a1 {
-		/*font-family: 'Monoton', cursive;*/
-		font-family: 'Baloo', cursive;
-		font-size: 30px;
-		margin-left: 0em;
-	}
+  .a1 {
+    /*font-family: 'Monoton', cursive;*/
+    font-family: "Baloo", cursive;
+    font-size: 30px;
+    margin-left: 0em;
+  }
 
-	.p1div {
-		border: 1px solid orange;
-		width: 150px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: orange;
-	}
+  .p1div {
+    border: 1px solid orange;
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: orange;
+  }
 
-	.p2div {
-		border: 1px solid red;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: red;
-	}
+  .p2div {
+    border: 1px solid red;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: red;
+  }
 
-	.p4div {
-		border: 1px solid blue;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: blue;
-	}
+  .p4div {
+    border: 1px solid blue;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: blue;
+  }
 
-	.form1 {
-		border: solid green;
-	}
+  .form1 {
+    border: solid green;
+  }
 
-	.form2 {
-		color: green;
-	}
+  .form2 {
+    color: green;
+  }
 
-	.textarea {
-		width: 300px;
-		height: 100px;
-		color: green;
-	}
+  .textarea {
+    width: 300px;
+    height: 100px;
+    color: green;
+  }
 
-	input {
-		color: green;
-		border-color: green;
-	}
+  input {
+    color: green;
+    border-color: green;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-	h2 {
-		font-size: 30px;
-	}
+  h2 {
+    font-size: 30px;
+  }
 
-	.div1 {
-		display: flex;
-		justify-content: space-around;
-	}
+  .div1 {
+    display: flex;
+    justify-content: space-around;
+  }
 
-	.div2 {
-		display: flex;
-		justify-content: flex-end;
-	}
+  .div2 {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-	.div5 {
-		width: 730px;
-		font-size: 150px;
-		line-height: 3;
-		font-family: 'Baloo', cursive,
-			tahoma,
-			verdana,
-			arial,
-			sans-serif;
-		margin: -13px 0 30px 0;
-		color: green;
-		text-shadow: 10px 10px black;
-		margin-left: 1.5em;
-	}
+  .div5 {
+    width: 730px;
+    font-size: 150px;
+    line-height: 3;
+    font-family: "Baloo", cursive, tahoma, verdana, arial, sans-serif;
+    margin: -13px 0 30px 0;
+    color: green;
+    text-shadow: 10px 10px black;
+    margin-left: 1.5em;
+  }
 
-	.h1 {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h1 {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h6div {
-		font-family: 'Aclonica';
-		font-size: 22px;
-		color: green;
-	}
+  .h6div {
+    font-family: "Aclonica";
+    font-size: 22px;
+    color: green;
+  }
 
-	.a1 {
-		/*font-family: 'Monoton', cursive;*/
-		font-family: 'Baloo', cursive;
-		font-size: 30px;
-		margin-left: 0em;
-	}
+  .a1 {
+    /*font-family: 'Monoton', cursive;*/
+    font-family: "Baloo", cursive;
+    font-size: 30px;
+    margin-left: 0em;
+  }
 
-	.p1div {
-		border: 1px solid orange;
-		width: 150px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: orange;
-	}
+  .p1div {
+    border: 1px solid orange;
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: orange;
+  }
 
-	.p2div {
-		border: 1px solid red;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: red;
-	}
+  .p2div {
+    border: 1px solid red;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: red;
+  }
 
-	.p4div {
-		border: 1px solid blue;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: blue;
-	}
+  .p4div {
+    border: 1px solid blue;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: blue;
+  }
 
-	.form1 {
-		border: solid green;
-	}
+  .form1 {
+    border: solid green;
+  }
 
-	.form2 {
-		color: green;
-	}
+  .form2 {
+    color: green;
+  }
 
-	.textarea {
-		width: 300px;
-		height: 100px;
-		color: green;
-	}
+  .textarea {
+    width: 300px;
+    height: 100px;
+    color: green;
+  }
 }
-
-;
 
 @media only screen and (min-width: 992px) {
-	h2 {
-		font-size: 30px;
-	}
+  h2 {
+    font-size: 30px;
+  }
 
-	.div1 {
-		display: flex;
-		justify-content: space-around;
-	}
+  .div1 {
+    display: flex;
+    justify-content: space-around;
+  }
 
-	.div2 {
-		display: flex;
-		justify-content: flex-end;
-	}
+  .div2 {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-	.div5 {
-		width: 730px;
-		font-size: 150px;
-		line-height: 3;
-		font-family: 'Baloo', cursive,
-			tahoma,
-			verdana,
-			arial,
-			sans-serif;
-		margin: -13px 0 30px 0;
-		color: green;
-		text-shadow: 10px 10px black;
-		margin-left: 1.5em;
-	}
+  .div5 {
+    width: 730px;
+    font-size: 150px;
+    line-height: 3;
+    font-family: "Baloo", cursive, tahoma, verdana, arial, sans-serif;
+    margin: -13px 0 30px 0;
+    color: green;
+    text-shadow: 10px 10px black;
+    margin-left: 1.5em;
+  }
 
-	.h1 {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h1 {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h6div {
-		font-family: 'Aclonica';
-		font-size: 22px;
-		color: green;
-	}
+  .h6div {
+    font-family: "Aclonica";
+    font-size: 22px;
+    color: green;
+  }
 
-	.a1 {
-		/*font-family: 'Monoton', cursive;*/
-		font-family: 'Baloo', cursive;
-		font-size: 30px;
-		margin-left: 0em;
-	}
+  .a1 {
+    /*font-family: 'Monoton', cursive;*/
+    font-family: "Baloo", cursive;
+    font-size: 30px;
+    margin-left: 0em;
+  }
 
-	.p1div {
-		border: 1px solid orange;
-		width: 150px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: orange;
-	}
+  .p1div {
+    border: 1px solid orange;
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: orange;
+  }
 
-	.p2div {
-		border: 1px solid red;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: red;
-	}
+  .p2div {
+    border: 1px solid red;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: red;
+  }
 
-	.p4div {
-		border: 1px solid blue;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: blue;
-	}
+  .p4div {
+    border: 1px solid blue;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: blue;
+  }
 
-	.form1 {
-		border: solid green;
-	}
+  .form1 {
+    border: solid green;
+  }
 
-	.form2 {
-		color: green;
-	}
+  .form2 {
+    color: green;
+  }
 
-	.textarea {
-		width: 300px;
-		height: 100px;
-		color: green;
-
-	}
+  .textarea {
+    width: 300px;
+    height: 100px;
+    color: green;
+  }
 }
 
-;
-
 @media only screen and (min-width: 1200px) {
-	h2 {
-		font-size: 50px;
-	}
+  h2 {
+    font-size: 50px;
+  }
 
-	.div1 {
-		display: flex;
-		justify-content: space-around;
-	}
+  .div1 {
+    display: flex;
+    justify-content: space-around;
+  }
 
-	.div2 {
-		display: flex;
-		justify-content: flex-end;
-	}
+  .div2 {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-	.div5 {
-		width: 730px;
-		font-size: 150px;
-		line-height: 3;
-		font-family: 'Baloo', cursive,
-			tahoma,
-			verdana,
-			arial,
-			sans-serif;
-		margin: -13px 0 30px 0;
-		color: green;
-		text-shadow: 10px 10px black;
-		margin-left: 1.5em;
-	}
+  .div5 {
+    width: 730px;
+    font-size: 150px;
+    line-height: 3;
+    font-family: "Baloo", cursive, tahoma, verdana, arial, sans-serif;
+    margin: -13px 0 30px 0;
+    color: green;
+    text-shadow: 10px 10px black;
+    margin-left: 1.5em;
+  }
 
-	.h1 {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h1 {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h {
-		text-align: center;
-		color: green;
-		font-family: 'Baloo', cursive;
-		text-shadow: 3px 3px black;
-		margin-left: 0em;
-	}
+  .h {
+    text-align: center;
+    color: green;
+    font-family: "Baloo", cursive;
+    text-shadow: 3px 3px black;
+    margin-left: 0em;
+  }
 
-	.h6div {
-		font-family: 'Aclonica';
-		font-size: 22px;
-		color: green;
-	}
+  .h6div {
+    font-family: "Aclonica";
+    font-size: 22px;
+    color: green;
+  }
 
-	.a1 {
-		/*font-family: 'Monoton', cursive;*/
-		font-family: 'Baloo', cursive;
-		font-size: 30px;
-		margin-left: 0em;
-	}
+  .a1 {
+    /*font-family: 'Monoton', cursive;*/
+    font-family: "Baloo", cursive;
+    font-size: 30px;
+    margin-left: 0em;
+  }
 
-	.p1div {
-		border: 1px solid orange;
-		width: 150px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: orange;
-	}
+  .p1div {
+    border: 1px solid orange;
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: orange;
+  }
 
-	.p2div {
-		border: 1px solid red;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: red;
-	}
+  .p2div {
+    border: 1px solid red;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: red;
+  }
 
-	.p4div {
-		border: 1px solid blue;
-		width: 120px;
-		height: 25px;
-		border-radius: 3px;
-		background-color: blue;
-	}
+  .p4div {
+    border: 1px solid blue;
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: blue;
+  }
 
-	.form1 {
-		border: solid green;
-	}
+  .form1 {
+    border: solid green;
+  }
 
-	.form2 {
-		color: green;
-	}
+  .form2 {
+    color: green;
+  }
 
-	.textarea {
-		width: 300px;
-		height: 100px;
-		color: green;
-	}
+  .textarea {
+    width: 300px;
+    height: 100px;
+    color: green;
+  }
 }
