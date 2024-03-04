@@ -24,7 +24,7 @@ router.get("/", (request, responce) => {
 });
 
 ////////////////////////////////////
-// delete route
+// Delete route
 //////////////////////////////////
 router.delete("/:id", (request, responce) => {
 	//update database and delete//////////////////////////////

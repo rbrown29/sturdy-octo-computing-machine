@@ -17,11 +17,12 @@
        <div class="lbttn">
           <div class="lbttn2">
              <div class="lbttn3">
-              <form action="/users" method="POST">
+              <form action="/users" method="POST" name="myForm" onsubmit="return validateForm()">
                 <input type="text" name="username" placeholder="Username"><br>
                 <input type="password" name="password" placeholder="Password"><br>
                 <input type="submit" name="Register">
-              </form>             
+              </form>
+              <input type="submit" value="&#60; Back" onclick="window.location.href='/' ">             
              </div>
           </div>
        </div>

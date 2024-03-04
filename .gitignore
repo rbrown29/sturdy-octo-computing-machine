@@ -62,3 +62,6 @@ typings/
 
 # nodemodules
 node_modules
+
+# Local Netlify folder
+.netlify

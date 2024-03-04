@@ -18,3 +18,32 @@ $(() => {
          $(".lbttn").css("visibility", "visible");
        });
 });
+///////////////////////////////////////////////////
+// Add event listener to form
+///////////////////////////////////////////////////
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  validateForm();
+});
+
+///////////////////////////////////////////////////
+// Validate form
+///////////////////////////////////////////////////
+function validateForm() {
+  var password = document.forms["myForm"]["password"].value;
+  var userName = document.forms["myForm"]["username"].value;
+  if (password.length < 8) {
+    alert("Password must be at least 8 characters long");
+    document.forms["myForm"]["password"].value = "";
+    document.forms["myForm"]["username"].value = "";
+    return false;
+  }
+  if (userName.length === "" || userName.length < 3) {
+    alert("Username must be at least 3 characters long");
+    document.forms["myForm"]["username"].value = "";
+    document.forms["myForm"]["password"].value = "";
+    return false;
+  }
+}
+
+
