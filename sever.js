@@ -89,5 +89,8 @@ app.get('/logout', (request, response) => {
 ////////////////////////////////////////////
 // listener
 ///////////////////////////////////////////
-app.listen(PORT, () => console.log( 'Listening at http://localhost:' + PORT));
+app.listen(PORT, () => {
+	console.log("Hiking App is running");
+	console.log( 'Listening at http://localhost:' + PORT);
+});
 
