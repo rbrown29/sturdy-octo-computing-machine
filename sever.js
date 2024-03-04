@@ -7,9 +7,12 @@ const db = mongoose.connection;
 const session = require("express-session"); // add session
 const morgan = require("morgan"); // add morgan
 const cors = require("cors"); // add cors
+const ejs = require("ejs");
 
 
 require('dotenv').config(); // add dotenv
+
+app.set("view engine", "ejs"); // add ejs
 
 ////////////////////////////////////////////
 // Database
