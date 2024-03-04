@@ -14,12 +14,12 @@ router.get("/new", (request, responce) => {
 //////////////////////
 // post route
 ///////////////////////
-router.post("/", (request, responce) => {
+router.post("/", (request, response) => {
   User.findOne({ username: request.body.username }, (error, foundUser) => {
     if (foundUser === null) {
       console.log("user not found");
       popup("user not found");
-      responce.redirect("/sessions/new");
+      response.redirect("/sessions/new");
     } else {
       const doesPasswordMatch = bcrypt.compareSync(
         request.body.password,
@@ -27,11 +27,11 @@ router.post("/", (request, responce) => {
       );
       if (doesPasswordMatch) {
         request.session.username = foundUser.username;
-        responce.redirect("/hike");
+        response.redirect("/hike");
       } else {
         console.log("password does not match");
         popup("password does not match");
-        responce.redirect("/sessions/new");
+        response.redirect("/sessions/new");
       }
     }
   });

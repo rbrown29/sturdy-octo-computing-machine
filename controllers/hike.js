@@ -48,14 +48,14 @@ router.get("/:id/edit", (request, response) => {
 ////////////////////////////////////
 // put route
 ///////////////////////////
-router.put("/:id", (request, responce) => {
+router.put("/:id", (request, response) => {
   // Put to the database and redirect/////////////////////////
   Hike.findByIdAndUpdate(
     request.params.id,
     request.body,
     { new: true },
     (error, updatedModel) => {
-      responce.redirect("/hike");
+      response.redirect("/hike");
     }
   );
 });
@@ -63,15 +63,15 @@ router.put("/:id", (request, responce) => {
 //////////////////////////////////
 // new route
 ///////////////////
-router.get("/new", (request, responce) => {
-  responce.render("hikes/new.ejs");
+router.get("/new", (request, response) => {
+  response.render("hikes/new.ejs");
 });
 ////////////////////////////////
 // show route
 ///////////////////////
-router.get("/:id", (request, responce) => {
+router.get("/:id", (request, response) => {
   Hike.findById(request.params.id, (error, foundHike) => {
-    responce.render("hikes/show.ejs", {
+    response.render("hikes/show.ejs", {
       Hike: foundHike,
     });
   });
@@ -80,18 +80,18 @@ router.get("/:id", (request, responce) => {
 /////////////////////////////////////////
 // Post route
 /////////////////////////////
-router.post("/", (request, responce) => {
+router.post("/", (request, response) => {
   Hike.create(request.body, (error, createdHike) => {
-    responce.redirect("/hike");
+    response.redirect("/hike");
   });
 });
 
 ////////////////////////////////////////////////////////
 // clear data                        //////////////////
 ///////////////////////////////////////////////////////
-router.put("/clear", (request, responce) => {
+router.put("/clear", (request, response) => {
   Hike.remove({}, (error, updatedModel) => {
-    responce.redirect("/hike");
+    response.redirect("/hike");
   });
 });
 
