@@ -1,71 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Oregon Hikes</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Oregon Hikes</title>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous">
-        </script>
-        <script type="text/javascript" src="../app.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
-        <link rel="stylesheet" href="../style.css">
-        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
-
-    </head>
-    <body>
-        <nav>
-            <h2><%=Hike.title%></h2>
-        </nav>
-        <div class="lbttn">
-            <a href="/hike">Back to hikes</a>
-            <a href="#" id="open">Description</a>
-            <div id="dialog">
-               <a href="#" class="close">Close</a>
-                   <p>
-                      <center><img src="<%=Hike.img%>" class="img3"></center><br>
-                      <%=Hike.description%>                 
-                   </p>
-            </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aclonica"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h2><%=Hike.title%></h2>
+    </nav>
+    <div class="lbttn">
+      <a href="/hike">Back to hikes</a>
+      <a href="#" id="open">Description</a>
+      <div id="dialog">
+        <a href="#" class="close">Close</a>
+        <p>
+          <center><img src="<%=Hike.img%>" class="img3" /></center>
+          <br />
+          <%=Hike.description%>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-md-5">
+        <div class="card">
+          <h3 class="card-title"><%=Hike.title%></h3>
+          <a href="<%=Hike.img%>"></a>
+          <img src="<%=Hike.img%>" />
+          <ul class="card-actions">
+            <li>
+              <%if (Hike.difficulty === "Easy" || Hike.difficulty === "easy")
+              {%>
+              <div class="p4div">
+                <p class="p4">Difficulty: <%=Hike.difficulty%></p>
+              </div>
+              <br />
+              <%} else if (Hike.difficulty === "Moderate" || Hike.difficulty ===
+              "moderate") {%>
+              <div class="p1div">
+                <p class="p4">Difficulty: <%=Hike.difficulty%></p>
+              </div>
+              <br />
+              <%} else { %>
+              <div class="p2div">
+                <p class="p4">Difficulty: <%=Hike.difficulty%></p>
+              </div>
+              <br />
+              <%}%> <%=Hike.description%><br /><br />
+              <a href="/hike/<%=Hike.id%>/edit">Edit This Hike</a>
+              <form
+                class="form2"
+                action="/hike/<%=Hike.id %>?_method=DELETE"
+                method="POST"
+              >
+                <input class="form1" type="submit" value="DELETE" />
+              </form>
+            </li>
+          </ul>
         </div>
-        <div class="row">
-            <div class="col col-md-5">
-                    <div class="card">
-                        <h3 class="card-title"><%=Hike.title%></h3>
-                        <a href="<%=Hike.img%>"></a>
-                        <img src="<%=Hike.img%>">
-                        <ul class="card-actions">
-                            <li>
-                                <%if (Hike.difficulty === "Easy" || Hike.difficulty === "easy") {%>
-                                    <div class="p4div">
-                                        <p class="p4">Difficulty: <%=Hike.difficulty%></p>
-                                     </div><br>
-                                <%} else if (Hike.difficulty === "Moderate" || Hike.difficulty === "moderate") {%>
-                                    <div class="p1div">
-                                        <p class="p4">Difficulty: <%=Hike.difficulty%></p>
-                                     </div><br>
-                                <%} else { %>
-                                     <div class="p2div">
-                                        <p class="p4">Difficulty: <%=Hike.difficulty%></p>
-                                     </div><br>
-                                <%}%>
-                                <%=Hike.description%><br><br>
-                                <a href="/hike/<%=Hike.id%>/edit">Edit This Hike</a>
-                                <form  class="form2" action="/hike/<%=Hike.id %>?_method=DELETE" method="POST">
-                                    <input class="form1" type="submit" value="DELETE"/>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-            <div class="div2">
-                 <div class="col col-md-14">
-                    <div class="card">
-                        <iframe src="<%=Hike.map%>" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="map"></iframe>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="div2">
+        <div class="col col-md-14">
+          <div class="card">
+            <iframe
+              src="<%=Hike.map%>"
+              width="400"
+              height="350"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen="map"
+            ></iframe>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
