@@ -9,8 +9,7 @@ const morgan = require("morgan"); // add morgan
 const cors = require("cors"); // add cors
 const ejs = require("ejs");
 
-
-require('dotenv').config(); // add dotenv
+require("dotenv").config(); // add dotenv
 
 app.set("view engine", "ejs"); // add ejs
 
@@ -18,79 +17,77 @@ app.set("view engine", "ejs"); // add ejs
 // Database
 ///////////////////////////////////////////
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/hikes';
-mongoose.connect(MONGODB_URI , {
-	 useNewUrlParser: true,
-	 useUnifiedTopology: true,
-	 useFindAndModify: false,
-	 useCreateIndex: true
-	}
-);
+const MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://localhost:27017/hikes";
+mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true,
+});
 ///////////////////////////////////////////
 // DB connection error/success
 //////////////////////////////////////////
-db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
-db.on('connected', () => console.log('mongo connected: ', MONGODB_URI));
-db.on('disconnected', () => console.log('mongo disconnected'));
+db.on("error", (err) => console.log(err.message + " is Mongod not running?"));
+db.on("connected", () => console.log("mongo connected: ", MONGODB_URI));
+db.on("disconnected", () => console.log("mongo disconnected"));
 ///////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////
 // middleware
 ////////////////////////////////////////////////
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: false })); 
-app.use(express.json());  
-app.use(methodOverride('_method')); 
-app.use(session({  // add session
-	  secret: "thereIsNoFateButWhatYouMake", 
-	  resave: true,
-	  saveUninitialized: true
-}));
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(methodOverride("_method"));
+app.use(
+  session({
+    // add session
+    secret: "thereIsNoFateButWhatYouMake",
+    resave: true,
+    saveUninitialized: true,
+  })
+);
 app.use(morgan("dev")); // add morgan
-app.use(cors(
-	{origin: "http://localhost:3003", credentials: true}
-)); // add cors
-
+app.use(cors({ origin: "http://localhost:3003", credentials: true })); // add cors
 
 ///////////////////////////////////////////////
 // controllers
 ///////////////////////////////////////////////
-const hikeController = require('./controllers/hike.js');
+const hikeController = require("./controllers/hike.js");
 app.use("/hike", hikeController);
 
-const usersController = require('./controllers/users.js');
+const usersController = require("./controllers/users.js");
 app.use("/users", usersController);
 
-const sessionsController = require('./controllers/sessions.js');
+const sessionsController = require("./controllers/sessions.js");
 app.use("/sessions", sessionsController);
 
 /////////////////////////////////////////////////////
 // Home page: have user log in or sign up
 /////////////////////////////////////////////////////
-app.get('/', (request, response) => {  
-     response.render("users/home.ejs");
+app.get("/", (request, response) => {
+  response.render("users/home.ejs");
 });
-
 
 ///////////////////////////
 // log out user session
 //////////////////////////
-app.get('/logout', (request, response) => { 
-	request.session.destroy((error) => {
-		if(error){
-			console.log(error);
-			response.redirect("/");
-		} else {
-			response.redirect("/");
-		}
-	});
+app.get("/logout", (request, response) => {
+  request.session.destroy((error) => {
+    if (error) {
+      console.log(error);
+      response.redirect("/");
+    } else {
+      response.redirect("/");
+    }
+  });
 });
 
 ////////////////////////////////////////////
 // listener
 ///////////////////////////////////////////
 app.listen(PORT, () => {
-	console.log("Hiking App is running");
-	console.log( 'Listening at http://localhost:' + PORT);
+  console.log("Hiking App is running");
+  console.log("Listening at http://localhost:" + PORT);
 });
-
