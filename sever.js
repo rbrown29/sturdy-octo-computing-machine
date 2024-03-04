@@ -7,17 +7,24 @@ const db = mongoose.connection;
 const session = require("express-session"); // add session
 const morgan = require("morgan"); // add morgan
 const cors = require("cors"); // add cors
+const ejs = require("ejs");
 
 
 require('dotenv').config(); // add dotenv
 
+app.set('view engine', 'ejs'); // add ejs
+
 ////////////////////////////////////////////
 // Database
 ///////////////////////////////////////////
-const PORT = process.env.PORT
-const MONGODB_URI = process.env.MONGODB_URI;
-mongoose.connect(MONGODB_URI , { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
-);
+const PORT = process.env.PORT || 3003;
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/hikes';
+mongoose.connect(MONGODB_URI , { 
+	useNewUrlParser: true, 
+	useUnifiedTopology: true, 
+	useFindAndModify: false,
+	useCreateIndex: true
+});
 ///////////////////////////////////////////
 // DB connection error/success
 //////////////////////////////////////////
@@ -59,22 +66,21 @@ app.use("/sessions", sessionsController);
 /////////////////////////////////////////////////////
 // Home page: have user log in or sign up
 /////////////////////////////////////////////////////
-app.get('/', (request, responce) => {  
-     responce.render("users/home.ejs");
-     // responce.render("hello");
+app.get('/', (request, response) => {  
+     response.render("/views/users/home.ejs");
 });
 
 
 ///////////////////////////
 // log out user session
 //////////////////////////
-app.get('/logout', (request, responce) => { 
+app.get('/logout', (request, response) => { 
 	request.session.destroy((error) => {
 		if(error){
 			console.log(error);
-			responce.redirect("/");
+			response.redirect("/");
 		} else {
-			responce.redirect("/");
+			response.redirect("/");
 		}
 	});
 });
@@ -82,7 +88,4 @@ app.get('/logout', (request, responce) => {
 ////////////////////////////////////////////
 // listener
 ///////////////////////////////////////////
-app.listen(PORT, () => console.log( 'Listening on port:', PORT));
-
-console.log(MONGODB_URI);
-console.log(PORT);
+app.listen(() => console.log( 'Listening on', 'http://localhost:' + PORT));
